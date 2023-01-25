@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Curso - Incluir</h1>
+    <h2>Nome:</h2>
+    <input type="text"><br>
+    <h2>Instrutor:</h2>
+    <input type="text"><br>
+    <h2>Local:</h2>
+    <input type="text"><br>
+    <div>
+        <table>
+            <tr class="duplo">
+                <td>Carga Horária:</td>
+                <td>Data Início:</td>
+            <tr>
+                <td><input type="number"><br></td>
+                <td><input type="date" placeholder="dd/mm/aaaa"></td>
+            </tr>
+        </table>    
+    </div>
+
+    <div>
+        <tr>
+            <td><button (click)="incluirCurso()">Incluir</button></td>
+            <td><button routerLink="/">Voltar</button></td>
+        </tr>
+    </div>
+    <div>
+        <p *ngIf="inclusaoCurso">Curso Incluído com sucesso!</p>
+    </div>
+
+</div>

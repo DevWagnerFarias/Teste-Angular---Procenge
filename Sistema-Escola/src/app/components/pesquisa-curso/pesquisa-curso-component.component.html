@@ -1,0 +1,43 @@
+<div class="container">
+    <h1>Curso</h1>
+    <h2>Nome:</h2>
+    <input type="text"><br>
+    <button>Pesquisar</button>
+
+    
+    <div>
+        <table>
+            <tr class="informacoes">
+                <td>Código</td>
+                <td>Nome</td>
+                <td>Instrutor</td>
+                <td>Local</td>
+                <td>Carga Horária</td>
+                <td>Data Início</td>
+            </tr>
+            <tr class="dados">
+                <td>{{curso1.codigo}}</td>
+                <td>{{curso1.nome}}</td>
+                <td>{{curso1.instrutor}}</td>
+                <td>{{curso1.local}}</td>
+                <td>{{curso1.carga}}</td>
+                <td>{{curso1.dataini}}</td>
+            </tr>
+            <tr class="dados">
+                <td>{{curso2.codigo}}</td>
+                <td>{{curso2.nome}}</td>
+                <td>{{curso2.instrutor}}</td>
+                <td>{{curso2.local}}</td>
+                <td>{{curso2.carga}}</td>
+                <td>{{curso2.dataini}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <button routerLink="/incluir">Incluir</button>
+    </div>
+
+</div>
+
+
